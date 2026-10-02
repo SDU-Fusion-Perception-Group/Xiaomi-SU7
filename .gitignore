@@ -1,0 +1,17 @@
+.tmp/
+build/
+out/
+*.elf
+*.hex
+*.bin
+*.map
+*.o
+*.obj
+*.d
+*.log
+.cache/
+.vscode/
+.idea/
+CMakeCache.txt
+CMakeFiles/
+cmake-build-*/
