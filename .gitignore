@@ -9,6 +9,7 @@ out/
 *.obj
 *.d
 *.log
+*.zip
 .cache/
 .vscode/
 .idea/
