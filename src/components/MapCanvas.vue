@@ -1,0 +1,31 @@
+<script setup lang="ts">
+import {onMounted,onBeforeUnmount,ref,watch} from 'vue'
+import Konva from 'konva'
+import {scanCandidates,type ArenaScan,type Point} from '../stores/perception'
+import floorUrl from '../assets/arena-tactical.svg'
+const texture=new Image()
+import {route} from '../stores/station'
+const props=defineProps<{x:number;y:number;yaw:number;scanFrame?:ArenaScan|null;obstacles:boolean;showRoute:boolean;scan:boolean;grid:boolean;zoom:number}>()
+const emit=defineEmits<{'zoom-change':[value:number];detection:[count:number|null]}>()
+const host=ref<HTMLDivElement>();let stage:Konva.Stage|undefined,observer:ResizeObserver|undefined
+const base=new Konva.Layer({listening:false}),plan=new Konva.Layer({listening:false}),live=new Konva.Layer({listening:false})
+// Logical units: 1 pixel = 4 mm at unit zoom; diagram north at the top.
+const S=250,B=600
+function rect(x:number,y:number,w:number,h:number,fill:string,stroke:string){base.add(new Konva.Rect({x:x*S,y:y*S,width:w*S,height:h*S,fill,stroke,strokeWidth:1}))}
+function label(text:string,x:number,y:number,size=14,color='#e3ebf1'){base.add(new Konva.Text({text,x:x*S,y:y*S,fontSize:size,fill:color,fontFamily:'Microsoft YaHei UI, sans-serif'}))}
+function circle(x:number,y:number,r:number,fill:string,stroke:string){base.add(new Konva.Circle({x:x*S,y:y*S,radius:r*S,fill,stroke,strokeWidth:1.4}))}
+function areaText(text:string,x:number,y:number,w:number,size:number,angle=0){base.add(new Konva.Text({text,x:x*S,y:y*S,width:w,offsetX:w/2,offsetY:size/2,align:'center',fontSize:size,rotation:angle,fill:'#344758',fontFamily:'Microsoft YaHei UI,sans-serif'}))}
+function drawField(){base.destroyChildren();rect(0,0,2.4,2.4,'#faf7f1','#adaeb0');if(texture.naturalWidth){base.add(new Konva.Image({image:texture,x:0,y:0,width:B,height:B,listening:false}));label(props.grid?'初赛场地 · 每格 50 mm':'初赛场地 · 2.40 × 2.40 m',0,2.50,14,'#5d6266');if(props.grid){for(let i=1;i<48;i++){const v=i*S*.05;const stroke=i%10===0?'#6f75844a':'#7f87962c';for(const points of [[v,0,v,B],[0,v,B,v]])base.add(new Konva.Line({points,stroke,strokeWidth:1,strokeScaleEnabled:false}))}}base.batchDraw();return;}if(props.grid)for(let i=1;i<48;i++){const z=i*S*.05;base.add(new Konva.Line({points:[z,0,z,B],stroke:'#ffffff0e'}),new Konva.Line({points:[0,z,B,z],stroke:'#ffffff0e'}))}
+ for(const x of [.55,1.4])for(const y of [.55,1.4]){rect(x,y,.45,.45,'#685e41','#b6a67a');label('禁入',x+.16,y+.19,13,'#e8ddbd')}
+ for(const [y,n] of [[0,1],[2.1,2]]){rect(2.1,y!, .3,.3,'#224e78','#79b5e5');areaText('启停区'+n,2.25,y!+(n===1?.24:.12),70,13)}
+ rect(0,.91,.15,.58,'#24323d','#8497a5');rect(.91,2.25,.58,.15,'#24323d','#8497a5');for(const d of [-.15,0,.15]){circle(.075,1.2+d,.04,'#17242d','#c4d9db');circle(1.2+d,2.325,.04,'#17242d','#c4d9db')}
+ circle(1.2,-.07,.15,'#223843','#a4bbc2');for(let i=0;i<3;i++){const a=i*2*Math.PI/3;circle(1.2+.09*Math.cos(a),-.07+.09*Math.sin(a),.022,'#94a9b4','#b7cbd7')}
+ areaText('原料区 · 转盘',1.2,.15,105,14,180);areaText('暂存区',.20,1.2,85,14,90);label('粗加工区',1.5,2.26);areaText('二维码区',2.30,1.2,85,14,-90);rect(2.39,1.10,.01,.20,'#97beca','#97beca');label('2027  /  智能搬运初赛',0,-.15,19);label('2.40 × 2.40 m     /     图 1 · 标称布局',0,2.46,15);base.batchDraw()}
+const car=new Konva.Group();let returns:Point[]=[],objects:Point[]=[],stamp=-Infinity
+const cloud=new Konva.Shape({sceneFunc(ctx){if(props.scan){ctx.fillStyle='#409aab';for(const p of returns)ctx.fillRect(p.x*S,(2.4-p.y)*S,1.6,1.6)}if(props.obstacles)for(const [i,p] of objects.entries()){const x=p.x*S,y=(2.4-p.y)*S;ctx.beginPath();ctx.arc(x,y,.025*S,0,2*Math.PI,false);ctx.fillStyle='#29333d';ctx.fill();ctx.strokeStyle='#d88528';ctx.lineWidth=2;ctx.stroke();ctx.fillStyle='#83460b';ctx.setAttr('font','bold 12px Consolas');ctx.fillText('OBS '+String(i+1).padStart(2,'0'),x+10,y-5)}}})
+let scanTimer=0;function pose(){if(performance.now()-stamp>=190){stamp=performance.now();const frame=props.scanFrame;const result=frame?scanCandidates(frame):{points:[],objects:[]};returns=result.points;objects=result.objects;emit('detection',frame&&frame.frame_id==='map'&&Math.abs(Date.now()-frame.ts_ms)<=1500?objects.length:null)}car.position({x:props.x*S,y:(2.4-props.y)*S});car.rotation(-props.yaw);live.batchDraw()}
+function fit(){if(!stage||!host.value)return;const {clientWidth:w,clientHeight:h}=host.value;stage.size({width:w,height:h});const k=Math.max(.1,Math.min((w-30)/620,(h-35)/645))*props.zoom;for(const l of [base,plan,live]){l.scale({x:k,y:k});l.position({x:(w-B*k)/2,y:(h-B*k)/2-8});l.batchDraw()}}
+onMounted(()=>{if(!host.value)return;stage=new Konva.Stage({container:host.value});stage.add(base,plan,live);texture.onload=drawField;texture.src=floorUrl;drawField();plan.visible(props.showRoute);plan.add(new Konva.Line({points:route.flatMap(([x,y])=>[x*S,(2.4-y)*S]),stroke:'#85cfd0',strokeWidth:1.6,dash:[5,6],opacity:.7}));car.add(new Konva.Wedge({radius:64,angle:60,rotation:-30,fillRadialGradientStartPoint:{x:0,y:0},fillRadialGradientStartRadius:0,fillRadialGradientEndPoint:{x:0,y:0},fillRadialGradientEndRadius:64,fillRadialGradientColorStops:[0,'rgba(90,214,216,.26)',1,'rgba(90,214,216,0)']}),new Konva.Rect({x:-19,y:-15,width:38,height:30,cornerRadius:6,fill:'#153b44',stroke:'#a0ebe3',strokeWidth:2}),new Konva.Line({points:[3,0,12,-4,21,0,26,0],stroke:'#efbc79',strokeWidth:4,lineJoin:'round'}),new Konva.Line({points:[30,-5,25,-5,25,5,30,5],stroke:'#efbc79',strokeWidth:2}));for(const x of [-13,8])for(const y of [-17,12]){car.add(new Konva.Rect({x,y,width:8,height:5,fill:'#27353d',stroke:'#aac4c9',strokeWidth:1,cornerRadius:1}))}live.add(cloud,car);stage.on('wheel',e=>{e.evt.preventDefault();emit('zoom-change',props.zoom*(e.evt.deltaY<0?1.12:.89))});observer=new ResizeObserver(fit);observer.observe(host.value);fit();pose();scanTimer=window.setInterval(pose,200)});watch(()=>[props.x,props.y,props.yaw,props.scan,props.obstacles],pose);watch(()=>props.grid,drawField);watch(()=>props.showRoute,value=>{plan.visible(value);plan.batchDraw()});watch(()=>props.zoom,fit);onBeforeUnmount(()=>{clearInterval(scanTimer);texture.onload=null;observer?.disconnect();stage?.destroy()})
+</script>
+<template><div ref="host" class="absolute inset-0" aria-label="2027 智能搬运初赛模拟场地"/></template>
+<style scoped>div{background:#d9dcd8}</style>

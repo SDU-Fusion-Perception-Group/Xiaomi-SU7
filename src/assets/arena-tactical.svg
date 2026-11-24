@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720" width="720" height="720" font-family="Microsoft YaHei UI,sans-serif">
+<defs>
+<linearGradient id="land" x2="1" y2="1" gradientUnits="objectBoundingBox">
+<stop stop-color="#faf7f1"/>
+<stop offset="1" stop-color="#faf7f1"/>
+</linearGradient>
+<pattern id="h" width="5" height="5" patternUnits="userSpaceOnUse">
+<path d="M0 5L5 0" stroke="#eaecce" stroke-opacity=".055"/>
+</pattern>
+</defs>
+<rect width="720" height="720" fill="url(#land)"/>
+<g stroke="#bbae89" stroke-opacity=".55">
+<rect x="165" y="165" width="135" height="135" fill="#d2e1ec"/>
+<rect x="165" y="165" width="135" height="135" fill="url(#h)"/>
+<rect x="165" y="420" width="135" height="135" fill="#d2e1ec"/>
+<rect x="165" y="420" width="135" height="135" fill="url(#h)"/>
+<rect x="420" y="165" width="135" height="135" fill="#d2e1ec"/>
+<rect x="420" y="165" width="135" height="135" fill="url(#h)"/>
+<rect x="420" y="420" width="135" height="135" fill="#d2e1ec"/>
+<rect x="420" y="420" width="135" height="135" fill="url(#h)"/>
+</g>
+<g fill="#d6e6f1" stroke="#85a8be">
+<rect x="630" y="0" width="90" height="90"/>
+<rect x="630" y="630" width="90" height="90"/>
+</g>
+<text x="675" y="75" textLength="72" lengthAdjust="spacingAndGlyphs" text-anchor="middle" fill="#314350" opacity=".58" font-size="23" font-weight="600" letter-spacing="3">启停区1</text>
+<text x="675" y="675" textLength="72" lengthAdjust="spacingAndGlyphs" text-anchor="middle" fill="#314350" opacity=".58" font-size="23" font-weight="600" letter-spacing="3">启停区2</text>
+<path d="M0 273H45V447H0 M273 720V675H447V720" fill="#f1eee7" stroke="#aba69c"/>
+<g transform="translate(23 405)" stroke="#af5148" fill="none">
+<circle r="21"/>
+<circle r="19"/>
+<circle r="17"/>
+<circle r="15"/>
+<circle r="13"/>
+<circle r="11"/>
+<text y="5" text-anchor="middle" stroke="none" fill="#af5148" font-size="14">1</text></g>
+<g transform="translate(405 697)" stroke="#af5148" fill="none">
+<circle r="21"/>
+<circle r="19"/>
+<circle r="17"/>
+<circle r="15"/>
+<circle r="13"/>
+<circle r="11"/>
+<text y="5" text-anchor="middle" stroke="none" fill="#af5148" font-size="14">1</text></g>
+<g transform="translate(23 360)" stroke="#967015" fill="none">
+<circle r="21"/>
+<circle r="19"/>
+<circle r="17"/>
+<circle r="15"/>
+<circle r="13"/>
+<circle r="11"/>
+<text y="5" text-anchor="middle" stroke="none" fill="#967015" font-size="14">2</text></g>
+<g transform="translate(360 697)" stroke="#967015" fill="none">
+<circle r="21"/>
+<circle r="19"/>
+<circle r="17"/>
+<circle r="15"/>
+<circle r="13"/>
+<circle r="11"/>
+<text y="5" text-anchor="middle" stroke="none" fill="#967015" font-size="14">2</text></g>
+<g transform="translate(23 315)" stroke="#396f9e" fill="none">
+<circle r="21"/>
+<circle r="19"/>
+<circle r="17"/>
+<circle r="15"/>
+<circle r="13"/>
+<circle r="11"/>
+<text y="5" text-anchor="middle" stroke="none" fill="#396f9e" font-size="14">3</text></g>
+<g transform="translate(315 697)" stroke="#396f9e" fill="none">
+<circle r="21"/>
+<circle r="19"/>
+<circle r="17"/>
+<circle r="15"/>
+<circle r="13"/>
+<circle r="11"/>
+<text y="5" text-anchor="middle" stroke="none" fill="#396f9e" font-size="14">3</text></g>
+<text transform="translate(360 45) rotate(180)" x="0" y="0" text-anchor="middle" fill="#314350" opacity=".68" font-size="22">原料区 · 转盘</text>
+<text transform="translate(56 360) rotate(90)" x="0" y="0" text-anchor="middle" fill="#314350" opacity=".68" font-size="22">暂存区</text>
+<text x="360" y="657" text-anchor="middle" fill="#314350" opacity=".68" font-size="22">粗加工区</text>
+<text transform="translate(690 360) rotate(-90)" x="0" y="0" text-anchor="middle" fill="#314350" opacity=".68" font-size="22">二维码区</text>
+<circle cx="360" cy="-21" r="45" fill="#9ba6ab" stroke="#66747b"/><path d="M717 333v54" stroke="#536777" stroke-width="4"/></svg>
