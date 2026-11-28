@@ -1,0 +1,16 @@
+2026-11-24T21:06:23+08:00
+/home/b0weny/hwt905_serial_lab/logs/07-rate-20261124-210623
+TX ffaa270300
+RX 555f0900070000000000c4
+baseline bytes 8811 frames {81: 200, 82: 200, 83: 200, 89: 200, 95: 1} bad 0 rate_readback [9] acc_hz 99.89
+TX ffaa6988b5
+TX ffaa030800
+TX ffaa270300
+RX 555f0800070000000000c3
+50hz bytes 4455 frames {81: 101, 82: 101, 83: 101, 89: 101, 95: 1} bad 0 rate_readback [8] acc_hz 50.47
+TX ffaa6988b5
+TX ffaa030900
+TX ffaa270300
+RX 555f0900070000000000c4
+restored bytes 8855 frames {89: 201, 81: 201, 82: 201, 83: 200, 95: 1} bad 0 rate_readback [9] acc_hz 100.43
+test_exit=0

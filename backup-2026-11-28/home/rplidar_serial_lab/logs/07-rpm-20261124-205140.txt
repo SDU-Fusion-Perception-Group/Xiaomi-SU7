@@ -1,0 +1,100 @@
+2026-11-24T20:51:40+08:00
+connect=00000000
+motor_support_rc=00000000 type=2
+default_rc=00000000
+start=00000000 mode=DenseBoost
+target_rpm=360 set_rc=00000000
+grab_error=80008002
+grab_error=80008002
+grab_error=80008002
+grab_error=80008002
+grab_error=80008002
+grab_error=80008002
+target=360 elapsed=2.754 interval_ms=2753.919 points=1080 valid=460 included=0
+target=360 elapsed=2.866 interval_ms=112.268 points=1008 valid=396 included=1
+target=360 elapsed=2.965 interval_ms=99.161 points=949 valid=388 included=1
+target=360 elapsed=3.065 interval_ms=99.166 points=912 valid=351 included=1
+target=360 elapsed=3.164 interval_ms=99.144 points=890 valid=349 included=1
+target=360 elapsed=3.256 interval_ms=92.198 points=879 valid=342 included=1
+target=360 elapsed=3.355 interval_ms=99.171 points=879 valid=333 included=1
+target=360 elapsed=3.447 interval_ms=92.253 points=888 valid=358 included=1
+target=360 elapsed=3.546 interval_ms=99.155 points=901 valid=348 included=1
+target=360 elapsed=3.646 interval_ms=99.176 points=912 valid=368 included=1
+target=360 elapsed=3.745 interval_ms=99.171 points=921 valid=364 included=1
+target=360 elapsed=3.844 interval_ms=99.119 points=924 valid=369 included=1
+target=360 elapsed=3.943 interval_ms=99.159 points=925 valid=365 included=1
+target=360 elapsed=4.048 interval_ms=105.307 points=926 valid=377 included=1
+target=360 elapsed=4.148 interval_ms=99.162 points=930 valid=350 included=1
+target=360 elapsed=4.247 interval_ms=99.164 points=931 valid=386 included=1
+target=360 elapsed=4.346 interval_ms=99.141 points=931 valid=373 included=1
+target=360 elapsed=4.451 interval_ms=105.354 points=934 valid=386 included=1
+target=360 elapsed=4.551 interval_ms=99.421 points=934 valid=380 included=1
+target=360 elapsed=4.650 interval_ms=98.953 points=932 valid=373 included=1
+target=360 elapsed=4.748 interval_ms=98.417 points=933 valid=388 included=1
+target=360 elapsed=4.854 interval_ms=106.184 points=933 valid=367 included=1
+target=360 elapsed=4.953 interval_ms=99.133 points=930 valid=368 included=1
+target=360 elapsed=5.052 interval_ms=99.167 points=931 valid=363 included=1
+target=360 elapsed=5.158 interval_ms=105.304 points=932 valid=371 included=1
+target=360 elapsed=5.257 interval_ms=99.156 points=932 valid=367 included=1
+target=360 elapsed=5.356 interval_ms=99.124 points=927 valid=386 included=1
+target=360 elapsed=5.455 interval_ms=99.165 points=927 valid=376 included=1
+target=360 elapsed=5.561 interval_ms=105.362 points=925 valid=373 included=1
+target=360 elapsed=5.660 interval_ms=99.224 points=926 valid=361 included=1
+target=360 elapsed=5.759 interval_ms=99.129 points=924 valid=362 included=1
+target=360 elapsed=5.857 interval_ms=98.429 points=921 valid=380 included=1
+target=360 elapsed=5.964 interval_ms=106.161 points=921 valid=369 included=1
+target=360 elapsed=6.063 interval_ms=99.169 points=921 valid=373 included=1
+summary target_rpm=360 intervals=33 frequency_hz=9.974
+target_rpm=480 set_rc=00000000
+target=480 elapsed=0.089 interval_ms=88.915 points=921 valid=363 included=0
+target=480 elapsed=0.187 interval_ms=98.441 points=941 valid=382 included=0
+target=480 elapsed=0.293 interval_ms=106.056 points=993 valid=392 included=0
+target=480 elapsed=0.412 interval_ms=118.543 points=1066 valid=435 included=0
+target=480 elapsed=0.531 interval_ms=119.285 points=1136 valid=478 included=0
+target=480 elapsed=0.663 interval_ms=131.748 points=1192 valid=533 included=0
+target=480 elapsed=0.795 interval_ms=132.428 points=1213 valid=524 included=0
+target=480 elapsed=0.921 interval_ms=125.562 points=1206 valid=551 included=0
+target=480 elapsed=1.053 interval_ms=131.610 points=1183 valid=515 included=0
+target=480 elapsed=1.178 interval_ms=125.550 points=1161 valid=482 included=0
+target=480 elapsed=1.304 interval_ms=125.729 points=1146 valid=486 included=0
+target=480 elapsed=1.429 interval_ms=125.254 points=1139 valid=507 included=0
+target=480 elapsed=1.555 interval_ms=125.532 points=1140 valid=500 included=0
+target=480 elapsed=1.673 interval_ms=118.547 points=1143 valid=511 included=0
+target=480 elapsed=1.799 interval_ms=125.448 points=1145 valid=514 included=0
+target=480 elapsed=1.918 interval_ms=119.314 points=1148 valid=522 included=0
+target=480 elapsed=2.043 interval_ms=125.499 points=1148 valid=505 included=1
+target=480 elapsed=2.169 interval_ms=125.548 points=1144 valid=516 included=1
+target=480 elapsed=2.294 interval_ms=125.452 points=1144 valid=508 included=1
+target=480 elapsed=2.419 interval_ms=124.736 points=1143 valid=501 included=1
+target=480 elapsed=2.545 interval_ms=125.585 points=1146 valid=530 included=1
+target=480 elapsed=2.664 interval_ms=119.288 points=1145 valid=501 included=1
+target=480 elapsed=2.790 interval_ms=125.460 points=1150 valid=520 included=1
+target=480 elapsed=2.915 interval_ms=125.496 points=1150 valid=523 included=1
+target=480 elapsed=3.041 interval_ms=125.536 points=1148 valid=517 included=1
+target=480 elapsed=3.166 interval_ms=125.447 points=1149 valid=516 included=1
+target=480 elapsed=3.291 interval_ms=125.471 points=1148 valid=516 included=1
+target=480 elapsed=3.410 interval_ms=118.565 points=1148 valid=488 included=1
+target=480 elapsed=3.536 interval_ms=125.550 points=1147 valid=521 included=1
+target=480 elapsed=3.661 interval_ms=125.469 points=1152 valid=520 included=1
+target=480 elapsed=3.787 interval_ms=125.502 points=1152 valid=531 included=1
+target=480 elapsed=3.912 interval_ms=125.554 points=1153 valid=527 included=1
+target=480 elapsed=4.038 interval_ms=125.433 points=1156 valid=487 included=1
+target=480 elapsed=4.163 interval_ms=125.737 points=1152 valid=523 included=1
+target=480 elapsed=4.289 interval_ms=125.330 points=1149 valid=520 included=1
+target=480 elapsed=4.414 interval_ms=125.421 points=1147 valid=506 included=1
+target=480 elapsed=4.533 interval_ms=118.547 points=1146 valid=506 included=1
+target=480 elapsed=4.658 interval_ms=125.480 points=1144 valid=505 included=1
+target=480 elapsed=4.784 interval_ms=125.557 points=1151 valid=499 included=1
+target=480 elapsed=4.909 interval_ms=125.537 points=1152 valid=508 included=1
+target=480 elapsed=5.035 interval_ms=125.498 points=1151 valid=494 included=1
+target=480 elapsed=5.160 interval_ms=125.483 points=1149 valid=512 included=1
+target=480 elapsed=5.286 interval_ms=125.438 points=1151 valid=515 included=1
+target=480 elapsed=5.411 interval_ms=125.734 points=1149 valid=508 included=1
+target=480 elapsed=5.530 interval_ms=118.321 points=1148 valid=503 included=1
+target=480 elapsed=5.655 interval_ms=125.562 points=1148 valid=533 included=1
+target=480 elapsed=5.781 interval_ms=125.441 points=1148 valid=529 included=1
+target=480 elapsed=5.900 interval_ms=119.345 points=1149 valid=526 included=1
+target=480 elapsed=6.025 interval_ms=124.732 points=1149 valid=494 included=1
+summary target_rpm=480 intervals=33 frequency_hz=8.036
+stop=00000000 zero_speed=00000000
+test_exit=0

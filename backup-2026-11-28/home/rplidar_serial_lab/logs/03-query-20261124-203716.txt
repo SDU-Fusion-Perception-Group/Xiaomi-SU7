@@ -1,0 +1,9 @@
+2026-11-24T20:37:16+08:00
+baud (256000, 256000)
+TX a550 2
+RX chunk a55a1400000004611c011252b9ee86c8e79dcac9ea9cf0a366447d 4 ms
+total RX 27 descriptor a55a1400000004
+TX a552 2
+RX chunk a55a0300000006000000 3 ms
+total RX 10 descriptor a55a0300000006
+query_exit=0

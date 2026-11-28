@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/b0weny/robot_px4_core/build/_deps/rplidar_sdk-subbuild/CMakeFiles/rplidar_sdk-populate"
+		},
+		{
+			"file" : "/home/b0weny/robot_px4_core/build/_deps/rplidar_sdk-subbuild/CMakeFiles/rplidar_sdk-populate.rule"
+		},
+		{
+			"file" : "/home/b0weny/robot_px4_core/build/_deps/rplidar_sdk-subbuild/CMakeFiles/rplidar_sdk-populate-complete.rule"
+		},
+		{
+			"file" : "/home/b0weny/robot_px4_core/build/_deps/rplidar_sdk-subbuild/rplidar_sdk-populate-prefix/src/rplidar_sdk-populate-stamp/rplidar_sdk-populate-build.rule"
+		},
+		{
+			"file" : "/home/b0weny/robot_px4_core/build/_deps/rplidar_sdk-subbuild/rplidar_sdk-populate-prefix/src/rplidar_sdk-populate-stamp/rplidar_sdk-populate-configure.rule"
+		},
+		{
+			"file" : "/home/b0weny/robot_px4_core/build/_deps/rplidar_sdk-subbuild/rplidar_sdk-populate-prefix/src/rplidar_sdk-populate-stamp/rplidar_sdk-populate-download.rule"
+		},
+		{
+			"file" : "/home/b0weny/robot_px4_core/build/_deps/rplidar_sdk-subbuild/rplidar_sdk-populate-prefix/src/rplidar_sdk-populate-stamp/rplidar_sdk-populate-install.rule"
+		},
+		{
+			"file" : "/home/b0weny/robot_px4_core/build/_deps/rplidar_sdk-subbuild/rplidar_sdk-populate-prefix/src/rplidar_sdk-populate-stamp/rplidar_sdk-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/b0weny/robot_px4_core/build/_deps/rplidar_sdk-subbuild/rplidar_sdk-populate-prefix/src/rplidar_sdk-populate-stamp/rplidar_sdk-populate-patch.rule"
+		},
+		{
+			"file" : "/home/b0weny/robot_px4_core/build/_deps/rplidar_sdk-subbuild/rplidar_sdk-populate-prefix/src/rplidar_sdk-populate-stamp/rplidar_sdk-populate-test.rule"
+		},
+		{
+			"file" : "/home/b0weny/robot_px4_core/build/_deps/rplidar_sdk-subbuild/rplidar_sdk-populate-prefix/src/rplidar_sdk-populate-stamp/rplidar_sdk-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"rplidar_sdk-populate"
+		],
+		"name" : "rplidar_sdk-populate"
+	}
+}

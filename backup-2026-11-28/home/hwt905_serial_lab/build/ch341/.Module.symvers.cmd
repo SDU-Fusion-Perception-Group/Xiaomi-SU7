@@ -1,0 +1,1 @@
+savedcmd_/home/b0weny/hwt905_serial_lab/build/ch341/Module.symvers :=  scripts/mod/modpost -M -m       -o /home/b0weny/hwt905_serial_lab/build/ch341/Module.symvers -T /home/b0weny/hwt905_serial_lab/build/ch341/modules.order -i Module.symvers -e 

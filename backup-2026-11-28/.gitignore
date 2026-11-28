@@ -1,0 +1,5 @@
+# Originals preserved locally; remote uses lossless 40 MiB volumes.
+home/hwt905_serial_lab/build/ch341/public_sources.tbz2
+home/hwt905_serial_lab/build/ch341/Linux_for_Tegra/source/kernel_src.tbz2
+# Nested Git internals preserved in archives/*-git-metadata.tar.gz.
+**/.git/

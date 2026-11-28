@@ -1,0 +1,16 @@
+2026-11-24T21:07:02+08:00
+/home/b0weny/hwt905_serial_lab/logs/08-mask-20261124-210702
+TX ffaa270200
+RX 555f0e02090007000000d4
+baseline bytes 6655 frames {81: 151, 82: 151, 83: 151, 89: 151, 95: 1} bad 0 mask [526]
+TX ffaa6988b5
+TX ffaa020e00
+TX ffaa270200
+RX 555f0e00090007000000d2
+quaternion-off bytes 4994 frames {81: 151, 82: 151, 83: 150, 95: 1} bad 0 mask [14]
+TX ffaa6988b5
+TX ffaa020e02
+TX ffaa270200
+RX 555f0e02090007000000d4
+restored bytes 6611 frames {81: 150, 82: 150, 83: 150, 89: 150, 95: 1} bad 0 mask [526]
+test_exit=0

@@ -1,0 +1,19 @@
+2026-11-24T21:07:48+08:00
+/home/b0weny/hwt905_serial_lab/logs/09-baud-20261124-210748
+TX ffaa270200
+RX 555f0e02090007000000d4
+baseline bytes 3575 valid_frames 324 registers [(526, 9, 7)]
+TX ffaa6988b5
+TX ffaa040600
+TX ffaa270200
+RX 555f0e02090006000000d3
+115200 bytes 3531 valid_frames 321 registers [(526, 9, 6)]
+TX ffaa270200
+RX 555f0e02090006000000d3
+before_restore_115200 bytes 3531 valid_frames 321 registers [(526, 9, 6)]
+TX ffaa6988b5
+TX ffaa040700
+TX ffaa270200
+RX 555f0e02090007000000d4
+restored_230400 bytes 3575 valid_frames 324 registers [(526, 9, 7)]
+test_exit=0

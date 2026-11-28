@@ -1,0 +1,8 @@
+2026-11-24T21:04:36+08:00
+ID_MODEL_ID=7523
+ID_VENDOR_ID=1a86
+ID_PATH=platform-3610000.usb-usb-0:2.4:1.0
+9600 bytes 397 seconds 2.002 frames {} checksum_candidates_failed 0 prefix 20fe83fe8bfcb820fe30ff01f2b1fa62ff90fe8b9c08e98bfe0bfa87bc01fa8bfe08e98fcdb0fd0ae98fb84b
+115200 bytes 3271 seconds 2.008 frames {} checksum_candidates_failed 0 prefix f7ff10480e080818ec18618d40ff0971e0ffc2c80e080838fc18618d10eb0971e7c24602080018e1b8610def
+230400 bytes 8832 seconds 2.005 frames {'0x51': 201, '0x52': 201, '0x53': 200, '0x59': 200} checksum_candidates_failed 0 prefix 5551fafffaff06080909b855520000000000000909b955531a001500b3fdfb46c85559f17fdcff250063fc7d
+rx_exit=0

@@ -1,0 +1,15 @@
+2026-11-24T21:12:46+08:00
+/home/b0weny/hwt905_serial_lab/logs/13-final-20261124-211246
+USEC_INITIALIZED=7988424825
+ID_MODEL_ID=7523
+ID_VENDOR_ID=1a86
+ID_PATH=platform-3610000.usb-usb-0:2.4:1.0
+Nov 24 21:12:26 b0weny kernel: usb 1-2.4: USB disconnect, device number 14
+Nov 24 21:12:26 b0weny kernel: ch341-uart ttyUSB0: ch341-uart converter now disconnected from ttyUSB0
+Nov 24 21:12:26 b0weny kernel: ch341 1-2.4:1.0: device disconnected
+Nov 24 21:12:29 b0weny kernel: ch341 1-2.4:1.0: ch341-uart converter detected
+Nov 24 21:12:29 b0weny kernel: usb 1-2.4: ch341-uart converter now attached to ttyUSB0
+TX ffaa270200 5
+RX 555f0e02090007000000d4
+bytes 4443 frames {'0x51': 101, '0x52': 101, '0x53': 100, '0x59': 100, '0x5f': 1}
+test_exit=0
