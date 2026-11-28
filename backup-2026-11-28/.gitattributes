@@ -1,3 +1,0 @@
-# Preserve every original byte across Windows and Linux checkouts.
-* -text
-**/* -text

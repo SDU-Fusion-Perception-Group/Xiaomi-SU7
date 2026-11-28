@@ -1,6 +1,0 @@
-2026-11-24T20:56:21+08:00
-6.8.12-1021-tegra
-# CONFIG_USB_SERIAL_CH341 is not set
-modinfo: ERROR: Module ch341 not found.
-/sys/bus/usb/devices/1-2.4
-ls: cannot access '/sys/bus/usb/devices/1-2.4:*/driver': No such file or directory

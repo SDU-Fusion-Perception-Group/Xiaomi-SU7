@@ -1,1 +1,0 @@
-savedcmd_/home/b0weny/hwt905_serial_lab/build/ch341/ch341.ko := ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o /home/b0weny/hwt905_serial_lab/build/ch341/ch341.ko /home/b0weny/hwt905_serial_lab/build/ch341/ch341.o /home/b0weny/hwt905_serial_lab/build/ch341/ch341.mod.o

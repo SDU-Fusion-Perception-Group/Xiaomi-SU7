@@ -1,7 +1,0 @@
-2026-11-24T20:37:42+08:00
-TX a520 2
-RX bytes 10375 prefix a55a050000408102c934380322f734a00c021d35d4248265353c0e86ef356c0e
-nodes 2073 valid 2073 nonzero 1925 revolution markers 4
-TX a525 2
-post-stop drain bytes 152 then bytes 0
-scan_exit=0

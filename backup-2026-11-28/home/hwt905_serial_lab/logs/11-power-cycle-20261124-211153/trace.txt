@@ -1,7 +1,0 @@
-2026-11-24T21:11:53+08:00
-/home/b0weny/hwt905_serial_lab/logs/11-power-cycle-20261124-211153
-/dev/ttyUSB0 115200 TX ffaa270200
-RX 555f0e02090006000000d3
-bytes 4443 frames {81: 101, 82: 101, 83: 100, 89: 100, 95: 1}
-PERSISTENCE_VERIFIED
-test_exit=0
